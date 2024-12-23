@@ -1,0 +1,38 @@
+dut_sn: 920063
+gnss_typ: gps
+ttff_scan_time: 10
+cn_max_diff: 10
+reboot_time: 10
+screenshot_interval: 0.5
+case_interval: 2
+testing_cases:
+  black_screen:
+    - [testing,]
+    - 10
+  white_screen:
+    - [max_brightness, white_screen, testing]
+    - 10
+  watch:
+    - [max_brightness, watch_on, testing, watch_off]
+    - 10
+#  screen_refresh:
+#    - [screen_refresh, testing, reboot]
+#    - 10
+#  ppg:
+#    - [ppg_setting, ppg_enable, testing, ppg_disable]
+#    - 10
+#  audio:
+#    - [audio_start, testing, audio_stop, reboot]
+#    - 10
+#  mic:
+#    - [mic_start, testing, mic_stop]
+#    - 10
+#  motor:
+#    - [motor_start, testing, motor_start]
+#    - 10
+#  nand:
+#    - [nand_start, testing, nand_stop, reboot]
+#    - 180
+#  psram:
+#    - [psram_start, testing, psram_stop]
+#    - 600

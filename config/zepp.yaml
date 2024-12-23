@@ -1,0 +1,26 @@
+mobile_sn: bdb12599
+input_resource_id: com.xiaomi.hm.health.bletool:id/term_entry
+send_resource_id: com.xiaomi.hm.health.bletool:id/term_entry_send
+commands:
+  reboot: hm:sft+power=reboot
+  vol: hm:sft+bat=vol
+  gnss_open: hm:gnss+proc=open
+  read_auto: hm:gnss+proc=read_auto
+  max_brightness: hm:ht+cmd=ht,lcd,brightness,level:100
+  white_screen: hm:ht+cmd=ht,lcd,show,color:16777215
+  watch_on: hm:ht+cmd=ht,ui,seconds,switch:on
+  watch_off: hm:ht+cmd=ht,ui,seconds,switch:off
+  screen_refresh: hm:ht+cmd=ht,lcd,refresh,time:50
+  ppg_setting: hm:ht+cmd=ht,sensor,set,type:ppg,caloff:1,curr:200,dac:0
+  ppg_enable: hm:ht+cmd=ht,sensor,enable,type:ppg
+  ppg_disable: hm:ht+cmd=ht,sensor,disable,type:ppg
+  audio_start: hm:ht+cmd=ht,audio,start,name:/system/audio/Hwtest.mp3,vol:90
+  audio_stop: hm:ht+cmd=ht,audio,stop,name:/system/audio/Hwtest.mp3,vol:90
+  mic_start: hm:ht+cmd=ht,mic,start
+  mic_stop: hm:ht+cmd=ht,mic,stop
+  motor_start: hm:ht+cmd=ht,motor,start
+  motor_stop: hm:ht+cmd=ht,motor,stop
+  nand_start: hm:ht+cmd=ht,storage,start,type:nand
+  nand_stop: hm:ht+cmd=ht,storage,stop,type:nand
+  psram_start: hm:ht+cmd=ht,storage,start,type:psram
+  psram_stop: hm:ht+cmd=ht,storage,stop,type:psram

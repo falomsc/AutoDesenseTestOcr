@@ -1,0 +1,8 @@
+paddlepaddle
+paddleocr
+uiautomator2
+uiautodev
+numpy
+pyyaml
+setuptools
+opencv-python
